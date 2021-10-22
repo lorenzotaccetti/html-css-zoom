@@ -79,6 +79,10 @@ footer{
     color: white;
 }
 
+footer .left{
+    margin-left: 5px;
+}
+
 footer .left, .center , .right{
     height: 100%;
     display: flex;
