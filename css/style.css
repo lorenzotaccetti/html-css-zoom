@@ -1,14 +1,110 @@
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Common */
 body{
     font-family: 'Lato', sans-serif;
     background-color: #000000;
 }
 
+/* Header */
 header{
-    height: 100px;
+    height: 90px;
+    width: 100%;
+    position: relative;
+}
+
+.header-content{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 5px 0;
+}
+
+.header-content-wrapper{
+    color: white;
+    background-color: #4a4a4a;
+    margin: 0 10px;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+/* Main */
+main{
+    height: calc(100vh - 180px);
+    width: 100%;
+}
+
+.main-container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.main-container .box{
+    height: 150px;
+    width: 250px;
+    background-image: url(../img/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    position: relative;
+    color: white;
+}
+
+.main-container .mic-name-wrapper{
+    background-color: rgba(105, 113, 125, 0.6);
+    padding: 3px 4px 3px 5px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+/* Footer */
+footer{
+    height: 90px;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer .left, .center , .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .single-element{
+    margin: 10px;
+    text-align: center;
+}
+
+footer .single-element .element-text{
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+footer .green{
+    color: #4cc700;
+}
+
+footer .right{
+    background-color: #4a4a4a;
+    padding: 0px 15px;
+}
+
+footer .right a{
+    text-decoration: none;
+    color: #e32528;
 }
